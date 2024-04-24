@@ -23,3 +23,8 @@ Labeling specific types of transactions before sending them to the model can be 
 * By parsing the data differently, we could assess different things about the transaction more easily
     * For example, I parsed function names to determine the type of transaction
     * By parsing all the values, we could classify if the Tenderly object has too many similar values, which is a probable cause of some of the hallucinations
+ 
+### To do:
+* Think more about the different ways of classifying we want to do (example: swap VS withdrawal VS ETH transfer; simple tx VS complex tx VS tx with repetitive values; etc)
+* Create a comprehensive list (or lists) of adequate labels for different types of classificaltion we may want to do
+* More in-depth testing of the successfulness of classification for different transaction types
