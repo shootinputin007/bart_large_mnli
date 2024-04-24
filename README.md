@@ -1,5 +1,7 @@
 # Using bart_large_mnli to label transaction types
 
+Model: https://huggingface.co/facebook/bart-large-mnli
+
 ### Purpose
 Labeling specific types of transactions before sending them to the model can be useful for a few things:
 * Different types of transactions could require different system prompts for optimal explanation; providing labels before running the model would allow for dynamic changing of system prompts
