@@ -17,7 +17,7 @@ Labeling specific types of transactions before sending them to the model can be 
     * 3) a list of probabilities for each label
 
 ### Issues:
-* Bannanagun overrepresented in training data-> every swap is detected as bannanagun swap
+* Bannanagun overrepresented in training data-> every swap is detected as a bannanagun swap
 
 ### Ideas:
 * By parsing the data differently, we could assess different things about the transaction more easily
