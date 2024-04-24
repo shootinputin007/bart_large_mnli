@@ -1,5 +1,10 @@
 # Using bart_large_mnli to label transaction types
 
+# Purpose
+Labeling specific types of transactions before sending them to the model can be useful for a few things:
+* Different types of transactions could require different system prompts for optimal explanation; providing labels before running the model would allow for dynamic changing of system prompts
+* Large transactions, as well as transactions with multiple similar values for different assets, sometimes hallucinate and require a better model to get the decimals and amounts right; if we can label them beforehand, we can upgrade the model immediately
+
 ### Flow
 * Import the classifier from huggingface
 * Import a Tenderly json object for a transaction
@@ -12,6 +17,7 @@
     * 3) a list of probabilities for each label
 
 ### Issues:
+* Bannanagun overrepresented in training data-> every swap is detected as bannanagun swap
 
 ### Ideas:
 * By parsing the data differently, we could assess different things about the transaction more easily
